@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Viv | Professional Profile</title>
+  <style>
+    :root {
+      --bg: #f7f7f7;
+      --panel: #ffffff;
+      --text: #1f2a3d;
+      --muted: #5f6c7b;
+      --accent: #1f7aec;
+      --border: #d7dce1;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Arial", "Helvetica", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      padding: 32px 18px 60px;
+    }
+    .page { width: min(980px, 100%); }
+    header {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 20px;
+      padding: 22px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+      align-items: center;
+    }
+    .avatar {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: #e6edf5;
+      display: grid;
+      place-items: center;
+      color: #1f7aec;
+      font-size: 36px;
+      font-weight: 700;
+      border: 1px solid var(--border);
+    }
+    h1 { margin: 0 0 8px; font-size: 28px; letter-spacing: 0.4px; }
+    .subtitle { margin: 0 0 12px; color: var(--muted); line-height: 1.5; }
+    .cta-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .button {
+      padding: 10px 14px;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+      background: #eef4fd;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+    main { margin-top: 20px; display: grid; gap: 14px; }
+    section {
+      padding: 20px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+    }
+    .section-title { margin: 0 0 12px; font-size: 14px; letter-spacing: 1px; color: var(--muted); text-transform: uppercase; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+    .card {
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #fafbfc;
+    }
+    .card h3 { margin: 0 0 6px; font-size: 17px; }
+    .card p { margin: 0; color: var(--muted); line-height: 1.5; font-size: 14px; }
+    ul { padding-left: 18px; margin: 6px 0 0; color: var(--muted); line-height: 1.5; }
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; margin-top: 10px; }
+    .contact a {
+      display: block;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text);
+      background: #f4f6f9;
+      font-weight: 600;
+    }
+    @media (max-width: 640px) {
+      header { grid-template-columns: 1fr; text-align: center; }
+      .avatar { margin: 0 auto; }
+      .cta-row { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="avatar">V</div>
+      <div>
+        <h1>Viv — Business Economics & Product Intern</h1>
+        <p class="subtitle">UC San Diego B.S. in Business Economics (Minor in Cognitive Science, GPA 3.80/4.0, Provost Honors). Practical experience across startups, analytics, and customer research with a focus on clear communication and dependable delivery.</p>
+        <div class="cta-row">
+          <a class="button primary" href="#experience">Experience</a>
+          <a class="button" href="mailto:hello@viv.com">Email</a>
+          <a class="button" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="education">
+        <p class="section-title">Education</p>
+        <div class="card">
+          <h3>University of California, San Diego — San Diego, CA</h3>
+          <p>B.S. Business Economics, Minor in Cognitive Science · Dec 2026 · GPA: 3.80/4.0 (Provost Honors)</p>
+          <p style="margin-top:6px; color: var(--muted);">Relevant Coursework: Microeconomics, Macroeconomics, Econometrics, Multivariable Calculus, Advanced Statistics</p>
+        </div>
+      </section>
+
+      <section id="experience">
+        <p class="section-title">Professional Experience</p>
+        <div class="grid">
+          <div class="card">
+            <h3>Clairyon — Intern</h3>
+            <p>San Diego, CA · Jun - Sept 2024</p>
+            <ul>
+              <li>Secured leasing agreements to support growth and operations for a healthcare-focused startup.</li>
+              <li>Analyzed America's Physician Groups data to evaluate success rates and improve delivery metrics.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Learvo — Customer Research Intern</h3>
+            <p>San Diego, CA · Apr 2024 - Present</p>
+            <ul>
+              <li>Ran 15+ multi-part interviews during Beta/Alpha to shape an AI platform for medical students.</li>
+              <li>Worked on gamification and flashcard features to improve retention of complex medical content.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Saama Technologies — Summer Intern</h3>
+            <p>Campbell, CA · Jun – Sept 2023</p>
+            <ul>
+              <li>Used Python with Azure OpenAI to generate 20+ tailored outputs from brief input outlines.</li>
+              <li>Built frameworks to meet 4 KPIs, improving client onboarding efficiency; presented outcomes to C-suite.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Student Financial Solutions, UCSD — Financial Analyst</h3>
+            <p>San Diego, CA · Nov 2022 - Present</p>
+            <ul>
+              <li>Resolved 1,000+ student financial inquiries using ServiceNow/Talkdesk; handled $200K+ in discrepancies.</li>
+              <li>Trained 5 new hires on CRMs and advanced customer service practices.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Time Partners — Private Equity Intern</h3>
+            <p>London, England · Jun - Aug 2022</p>
+            <ul>
+              <li>Produced a 24-page EV market report from 17 sources to guide ESG-focused investment decisions.</li>
+              <li>Built an industry/competitive analysis of top 100 EU biotech VC funds including AUM and portfolios.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="leadership">
+        <p class="section-title">Leadership & Activities</p>
+        <div class="grid">
+          <div class="card">
+            <h3>Aids Awareness Alliance — President & Treasurer</h3>
+            <p>San Diego, CA · Sept 2024 - Present</p>
+            <ul>
+              <li>Established the organization, recruiting members, running GBMs, and coordinating fundraisers.</li>
+              <li>Oversee budgeting and fund management to support awareness campaigns and outreach.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Lumnus Consulting LLC — Consultant</h3>
+            <p>San Diego, CA · Apr 2023 – Sept 2024</p>
+            <ul>
+              <li>Led a team of 4 on 10+ case studies to improve client sales and retention; proposals implemented.</li>
+              <li>Co-led recruiting, overseeing case studies/interviews for 250+ candidates.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Undergraduate Investment Society — Associate</h3>
+            <p>San Diego, CA · Mar 2023 - Sept 2024</p>
+            <ul>
+              <li>Organized the Financial Horizons Conference; coordinated outreach for 500+ attendees.</li>
+              <li>Led and evaluated 20+ interviews during Fall 2023 recruitment.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Mentor Collective — Mentor</h3>
+            <p>San Diego, CA · Sept 2023 - Present</p>
+            <ul>
+              <li>Mentored 8 students over 2 years on academic, personal, and professional growth.</li>
+              <li>Provided tailored guidance to help mentees set goals and navigate challenges.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="additional">
+        <p class="section-title">Additional Information</p>
+        <div class="grid">
+          <div class="card">
+            <h3>Languages & Skills</h3>
+            <p>English (Fluent), Hindi (Fluent), German (Conversational)</p>
+            <p style="margin-top:6px;">R, Stata, Python</p>
+          </div>
+          <div class="card">
+            <h3>Interests</h3>
+            <p>Avid traveler, Level 6 certified sailor, Grade 5 certified guitarist, Chelsea and Mercedes supporter.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <p class="section-title">Get in touch</p>
+        <div class="contact-grid">
+          <a href="mailto:hello@viv.com">hello@viv.com</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
